@@ -513,3 +513,11 @@ header {
   margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Add patients section */
+#inpatientForm{
+  display: none;
+}
+#outpatientForm{
+  display: none;
+}
