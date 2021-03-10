@@ -102,48 +102,48 @@
                     <h2>In-patient Form</h2>
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" required>
+                        <input type="text" class="form-control" id="inpatientFirstName" aria-describedby="emailHelp"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" required>
+                        <input type="text" class="form-control" id="inpatientLastName" aria-describedby="emailHelp"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="inpatientEmail" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="phoneNumber" class="form-label">Phone Number</label>
-                        <input type="number" class="form-control" id="phoneNumber" required>
+                        <input type="number" class="form-control" id="inpatientPhoneNumber" required>
                     </div>
                     <div class="mb-3">
                         <label for="phoneNumber" class="form-label">Emergency Phone Number</label>
-                        <input type="number" class="form-control" id="emergencyphoneNumber" required>
+                        <input type="number" class="form-control" id="inpatientEmergencyphoneNumber" required>
                     </div>
                     <div class="mb-3">
                         <label for="birthday" class="form-label">Date of Birth</label>
-                        <input type="date" class="form-control" id="birthday" required>
+                        <input type="date" class="form-control" id="inpatientBirthday" required>
                     </div>
-                    <select class="form-select" aria-label="Default select example" id="gender">
-                        <option selected>Open this select gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Other</option>
-                      </select><br>
-                    <button type="submit" class="btn btn-primary mt-3">Register</button>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Sex</label>
+                        <input type="text" class="form-control" id="inpatientGender" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 inpatientRegister">Register</button>
                 </form>
             </div>
-            
+
         </div>
         <div class="row mt-3">
             <div class="col-md-12">
                 <div id="outpatientDetails">
-                    <table class="table">
+                    <table class="table table-striped border">
                         <h2>Out-patient Details</h2>
                         <thead>
                             <tr>
-                                <th scope="col">FirstName</th>
-                                <th scope="col">LastName</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
                                 <th scope="col">Emergency Phone Number</th>
@@ -163,13 +163,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="inpatientDetails">
-                    <table class="inpatienttable">
+                    <table class="table table-striped border">
                         <h2>In-patient Details</h2>
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">FirstName</th>
-                                <th scope="col">LastName</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
                                 <th scope="col">Emergency Phone Number</th>
@@ -177,18 +176,12 @@
                                 <th scope="col">Gender</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="inpatientTbody">
                             <!-- <tr>
     
                             </tr> -->
                         </tbody>
                     </table>
-                </div>
-            </div>
-        </div>
-            <div class="col-md-12">
-                <div id="inpatientTable">
-                    
                 </div>
             </div>
         </div>
