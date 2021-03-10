@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contact-us.css" />
+    <script src="assets/js/jquery-3.5.1.js"></script>
+    <script src="assets/js/contact-us.js"></script>
 </head>
 
 <body>
@@ -49,7 +51,7 @@
             <h1>CONTACT US</h1>
             
             <div id="par">If you have a question, you can leave a message</div>
-            <form action="https://gmail.us1.list-manage.com/subscribe/post?u=70d5d821ac16afadc7dce3223&amp;id=6eb95e58bc" method="post" name="mc-embedded-subscribe-form">
+            <form name="mc-embedded-subscribe-form" id="myForm" target="_blank"  onsubmit="return validate()">
                 <input type="text" class="form-control" placeholder="name" name="NAME" id="name">
                 <input type="text" class="form-control" placeholder="email" name="EMAIL" id="email">
                 <textarea rows="11" type="text" class="form-control" placeholder="type a message ..." name="MESSAGE" id="message"></textarea>
