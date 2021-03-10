@@ -90,13 +90,11 @@
                         <label for="birthday" class="form-label">Date of Birth</label>
                         <input type="date" class="form-control" id="birthday" required>
                     </div>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Other</option>
-                      </select><br>
-                    <button type="submit" id="registerOutpatient" class="btn btn-primary mt-3">Register</button>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Sex</label>
+                        <input type="text" class="form-control" id="gender" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3" id="outpatientRegister">Register</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -137,18 +135,16 @@
             </div>
             
         </div>
-
-        <!-- Tables -->
         <div class="row">
             <div class="col-md-12">
                 <div id="outpatientDetails">
-                    <table class="table outpatientTable">
+                    <table class="zoutpatienttable">
                         <h2>Out-patient Details</h2>
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
+                                <th scope="col">FirstName</th>
+                                <th scope="col">LastName</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone Number</th>
                                 <th scope="col">Emergency Phone Number</th>
@@ -168,7 +164,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="inpatientDetails">
-                    <table class="table inpatientTable">
+                    <table class="inpatienttable">
                         <h2>In-patient Details</h2>
                         <thead>
                             <tr>
@@ -203,7 +199,6 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="./assets/js/addPatients.js"></script>
 
 </body>

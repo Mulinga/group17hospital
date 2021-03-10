@@ -4,9 +4,11 @@ $(document).ready(function(){
     // User interface logic
     $("button.outPatient").click(function(event){
         event.preventDefault();
-        $("form#outpatientForm").slideToggle();
-        
-        let inputtedFirstname = $("#firstname").val();
+        $("form#outpatientForm").show();
+    });
+    $("#outpatientRegister").click(function(){
+        event.preventDefault();
+        let inputtedFirstname = $("#firstName").val();
         let inputtedLastname = $("#lastName").val();
         let inputtedEmail = $("#email").val();
         let inputtedPhoneNumber = $("#phoneNumber").val();
@@ -14,10 +16,17 @@ $(document).ready(function(){
         let inputtedBirthday = $("#birthday").val();
         let inputtedGender = $("#gender").val();
 
-        $("#registerOutpatient").click(function(){
-            $("#outpatientDetails").show();     
-        })
-    });
+        console.log("Outpatient firstname: ",inputtedFirstname);
+        console.log("Outpatient lastName: ",inputtedLastname);
+        console.log("Outpatient email: ",inputtedEmail);
+        console.log("Outpatient phoneNumber: ",inputtedPhoneNumber);
+        console.log("Outpatient emergencyphoneNumber: ",inputtedEmergencyphoneNumber);
+        console.log("Outpatient birthday: ",inputtedBirthday);
+        console.log("Outpatient gender: ",inputtedGender);
+    })
+
+
+
     $("button.inPatient").click(function(event){
         event.preventDefault();
         $("form#inpatientForm").slideToggle();
