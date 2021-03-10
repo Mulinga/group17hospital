@@ -515,34 +515,10 @@ header {
 /*# sourceMappingURL=style.css.map */
 
 /* Add patients section */
-#inpatientForm{
+
+#inpatientDetails{
   display: none;
 }
-#outpatientForm{
+#outpatientDetails{
   display: none;
-}
-
-/* FORM */
-
-#container-contact{
-  height:90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.356)),url(../images/contact-us/diego-ph-fIq0tET6llw-unsplash.jpg);
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 40px;
-}
-.form-control{
-  max-width: 750px;
-  justify-content: space-around;
-  margin:0 auto;
-  margin-top: 20px;
-  border-radius: 0px;
-  background-color:white; 
-  opacity:0.5;
-  border:2px solid black;
-  font-style: italic;
-}
-#contact-form.placeholder {
-  color:#fff;
 }

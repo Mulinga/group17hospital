@@ -1,0 +1,50 @@
+
+#container-contact{
+    margin-top: 100px;
+    height:90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.356)),url(../images/contact-us/diego-ph-fIq0tET6llw-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+.form-control{
+    max-width: 750px;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color:white; 
+    opacity:0.5;
+    border:2px solid black;
+    font-weight:900;
+}
+.form-control::placeholder{
+    color: grey;
+    opacity: 0.6;
+    font-size: 2vh;
+    font-style: italic;
+}
+h1{
+    color:white;
+    font-size:90px;
+    font-weight:bolder;
+    margin-left:250px;
+    border-bottom: 2px solid white;
+    max-width: 140vh;
+    margin-bottom: 18px;
+    padding-top: 25px;
+    letter-spacing: 1px;
+}
+input{
+    height:52px;
+}
+#par{
+    margin-bottom:50px;
+    font-size: 25px;
+    margin-left:250px;
+    color:white;
+}
+.space{
+    height:1px;
+}
