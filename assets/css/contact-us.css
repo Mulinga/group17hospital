@@ -56,6 +56,7 @@ input{
     font-weight:bold;
     font-size: 20px;
     margin-top: 15px;
+    border: 1px solid black;
 }
 #subbtn:hover{
     border: 3px solid coral;
