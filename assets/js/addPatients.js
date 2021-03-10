@@ -21,7 +21,7 @@ $(document).ready(function () {
     };
     $("button.outPatient").click(function (event) {
         event.preventDefault();
-        $("form#outpatientForm").show();
+        $("form#outpatientForm").slideToggle();
     });
     $("#outpatientRegister").click(function () {
         event.preventDefault();
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
     $("button.inPatient").click(function (event) {
         event.preventDefault();
-        $("form#inpatientForm").show();
+        $("form#inpatientForm").slideToggle();
 
         $(".inpatientRegister").click(function (event) {
             event.preventDefault()
