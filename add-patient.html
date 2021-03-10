@@ -90,20 +90,13 @@
                         <label for="birthday" class="form-label">Date of Birth</label>
                         <input type="date" class="form-control" id="birthday" required>
                     </div>
-                    <label for="gender">Gender</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Male
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Female
-                        </label>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                      </select><br>
+                    <button type="submit" class="btn btn-primary mt-3">Register</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -133,20 +126,13 @@
                         <label for="birthday" class="form-label">Date of Birth</label>
                         <input type="date" class="form-control" id="birthday" required>
                     </div>
-                    <label for="gender">Gender</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Male
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Female
-                        </label>
-                      </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <select class="form-select" aria-label="Default select example" id="gender">
+                        <option selected>Open this select gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                      </select><br>
+                    <button type="submit" class="btn btn-primary mt-3">Register</button>
                 </form>
             </div>
             

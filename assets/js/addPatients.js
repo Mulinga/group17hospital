@@ -5,9 +5,25 @@ $(document).ready(function(){
     $("button.outPatient").click(function(event){
         event.preventDefault();
         $("form#outpatientForm").slideToggle();
+        
+        let inputtedFirstname = $("#firstname").val();
+        let inputtedLastname = $("#lastName").val();
+        let inputtedEmail = $("#email").val();
+        let inputtedPhoneNumber = $("#phoneNumber").val();
+        let inputtedEmergencyphoneNumber = $("#emergencyphoneNumber").val();
+        let inputtedBirthday = $("#birthday").val();
+        let inputtedGender = $("#gender").val();
     });
     $("button.inPatient").click(function(event){
         event.preventDefault();
         $("form#inpatientForm").slideToggle();
+
+        let inputtedFirstname = $("#firstname").val();
+        let inputtedLastname = $("#lastName").val();
+        let inputtedEmail = $("#email").val();
+        let inputtedPhoneNumber = $("#phoneNumber").val();
+        let inputtedEmergencyphoneNumber = $("#emergencyphoneNumber").val();
+        let inputtedBirthday = $("#birthday").val();
+        let inputtedGender = $("#gender").val();
     });
 });
