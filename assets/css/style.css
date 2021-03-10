@@ -521,3 +521,9 @@ header {
 #outpatientForm{
   display: none;
 }
+#inpatientDetails{
+  display: none;
+}
+#outpatientDetails{
+  display: none;
+}
