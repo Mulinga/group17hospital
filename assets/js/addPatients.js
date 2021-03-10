@@ -13,6 +13,10 @@ $(document).ready(function(){
         let inputtedEmergencyphoneNumber = $("#emergencyphoneNumber").val();
         let inputtedBirthday = $("#birthday").val();
         let inputtedGender = $("#gender").val();
+
+        $("#registerOutpatient").click(function(){
+            $("#outpatientDetails").show();     
+        })
     });
     $("button.inPatient").click(function(event){
         event.preventDefault();
