@@ -3,7 +3,7 @@ This is a collaboration project among Mulinga Charles, Melissa Koi and Paul Ngig
 # Date 
 11/03/2021
 # Authors    
-*Charles Mulinga*, *Paul Ngigi*, *Melissa Wangui*
+*Charles Mulinga*, *Paul Ngigi*, *Melissa Wangui*, *Jeremy Masaku*
 ## Description
 There is insistence on use of features learned from class such as jQuery, ajaxifying forms with mailChimp, bootstrap and CSS, as well as html tables
 ### Objectives
