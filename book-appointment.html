@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/appointment.css" />
 </head>
 
 <body>
@@ -43,92 +44,7 @@
 
     </header>
 
-    <!--  ************************* Page Title Starts Here ************************** -->
-    <div class="page-nav no-margin row">
-        <div class="container">
-            <div class="row">
-                <h2>Enter Appointment Details</h2>
-            </div>
-        </div>
-    </div>
-    <!-- ######## Page  Title End ####### -->
-
-    <div class="container">
-        <div class="row mt-2">
-            <div class="col-3">
-                <form id="appointmentForm ">
-                    <h2>Booking Information</h2>
-                    <div class="mb-3 ">
-                        <input type="text" id="firstName" class="form-control" placeholder="Enter First Name" required/>
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="text" id="secondName" class="form-control" placeholder="Enter Second Name" required/>
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="email" id="e-mail" class="form-control" placeholder="Enter Email Address" required/>
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="number" id="yourNumber" class="form-control" placeholder="Enter Phone Number" required/>
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="number" id="emergencyContact" class="form-control" placeholder="Enter Emergency Contact" required/>
-                    </div>
-                    <div class="mb-3 ">
-                        <select name="department" id="department" class="form-control">
-                            <option value="">Select Department</option>
-                            <option value="gyna">Gynaecology</option>
-                            <option value="cardio">Cardiology</option>
-                            <option value="dent">Dental Surgery</option>
-                            <option value="optic">Optical Surgery</option>
-                        </select>
-                    </div>
-                    <div class="mb-3 ">
-                        <select name="doctor" id="doctor" class="form-control">
-                            <option value="">Select Doctor</option>
-                            <option value="gyna">Dr. Melissa Wangui</option>
-                            <option value="cardio">Dr. Paul Ngigi</option>
-                            <option value="dent">Dr. Mulinga Kyalo</option>
-                            <option value="optic">Dr. Kevin Munene</option>
-                        </select>
-                        <div class="mb-3 ">
-                            <input type="datetime-local" id="appointmentDate" class="form-control" placeholder="Day of Appointment" required/>
-                        </div>
-                        <button type="submit " class="btn btn-info " id="bookNow ">Book Appointment</button>
-                </form>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-secondary showBookings">Show Bookings</button>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12">
-                        <div id="bookAppointment">
-                            <table class="table table table-striped">
-                                <h1>Booked Persons</h1>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Phone Number</th>
-                                        <th scope="col">Emergency Contact</th>
-                                        <th scope="col">Specialist</th>
-                                        <th scope="col">Department</th>
-                                        <th scope="col">Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="bookAppointmentBody">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
