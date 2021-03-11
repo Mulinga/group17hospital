@@ -1,5 +1,7 @@
-$(document).ready(function () {
-    console.log("Content loaded");
+
+
+//$(document).ready(function () {
+//     console.log("Content loaded");
 
     // User interface logic
     // Reset Function
@@ -23,7 +25,7 @@ $(document).ready(function () {
         event.preventDefault();
         $("form#outpatientForm").slideToggle();
     });
-    $("#outpatientRegister").click(function () {
+    $("#outpatientRegister").click(function (event) {
         event.preventDefault();
         let inputtedFirstname = $("#firstName").val();
         let inputtedLastname = $("#lastName").val();
@@ -84,40 +86,40 @@ $(document).ready(function () {
             resetValues();
 
         }
-    })
+    });
 
 
 
     $("button.inPatient").click(function (event) {
         event.preventDefault();
         $("form#inpatientForm").slideToggle();
+    });
+    $("#inpatientRegister").click(function (event) {
+        event.preventDefault()
 
-        $(".inpatientRegister").click(function (event) {
-            event.preventDefault()
-
-            let inputtedInpatientFirstName = $("input#inpatientFirstName").val();
-            let inputtedInpatientLastname = $("#inpatientLastName").val();
-            let inputtedInpatientEmail = $("#inpatientEmail").val();
-            let inputtedInpatientPhoneNumber = $("#inpatientPhoneNumber").val();
-            let inputtedInpatientEmergencyphoneNumber = $("#inpatientEmergencyphoneNumber").val();
-            let inputtedInpatientBirthday = $("#inpatientBirthday").val();
-            let inputteInpatientdGender = $("#inpatientGender").val();
+        let inputtedInpatientFirstName = $("#inpatientFirstName").val();
+        let inputtedInpatientLastname = $("#inpatientLastName").val();
+        let inputtedInpatientEmail = $("#inpatientEmail").val();
+        let inputtedInpatientPhoneNumber = $("#inpatientPhoneNumber").val();
+        let inputtedInpatientEmergencyphoneNumber = $("#inpatientEmergencyphoneNumber").val();
+        let inputtedInpatientBirthday = $("#inpatientBirthday").val();
+        let inputteInpatientdGender = $("#inpatientGender").val();
 
 
-            // console.log("Outpatient firstname: ", inputtedInpatientFirstName);
-            // console.log("Outpatient lastName: ", inputtedInpatientLastname);
-            // console.log("Outpatient email: ", inputtedInpatientEmail);
-            // console.log("Outpatient phoneNumber: ", inputtedInpatientPhoneNumber);
-            // console.log("Outpatient emergencyphoneNumber: ", inputtedInpatientEmergencyphoneNumber);
-            // console.log("Outpatient birthday: ", inputtedInpatientBirthday);
-            // console.log("Outpatient gender: ", inputteInpatientdGender);
+        // console.log("Outpatient firstname: ", inputtedInpatientFirstName);
+        // console.log("Outpatient lastName: ", inputtedInpatientLastname);
+        // console.log("Outpatient email: ", inputtedInpatientEmail);
+        // console.log("Outpatient phoneNumber: ", inputtedInpatientPhoneNumber);
+        // console.log("Outpatient emergencyphoneNumber: ", inputtedInpatientEmergencyphoneNumber);
+        // console.log("Outpatient birthday: ", inputtedInpatientBirthday);
+        // console.log("Outpatient gender: ", inputteInpatientdGender);
 
-            if (inputtedInpatientFirstName == '' || inputtedInpatientLastname == '' || inputtedInpatientEmail == '' || inputtedInpatientPhoneNumber == '' || inputtedInpatientEmergencyphoneNumber == '' || inputtedInpatientBirthday == '' || inputteInpatientdGender == '') {
-                alert("Please fill all the fields!")
-            }else{
-                $("#inpatientDetails").show();
+        if (inputtedInpatientFirstName == '' || inputtedInpatientLastname == '' || inputtedInpatientEmail == '' || inputtedInpatientPhoneNumber == '' || inputtedInpatientEmergencyphoneNumber == '' || inputtedInpatientBirthday == '' || inputteInpatientdGender == '') {
+            alert("Please fill all the fields!")
+        }else{
+            $("#inpatientDetails").show();
 
-                // Appending to the table
+            // Appending to the table
             var tableRow = document.createElement("tr");
 
             var InpatientTabledataFName = document.createElement("td");
@@ -150,11 +152,11 @@ $(document).ready(function () {
             tableRow.appendChild(InpatientTabledataDOB);
             tableRow.appendChild(InpatientTabledataSex);
 
-            $(".inpatientTbody").append(tableRow);
+            $("#inpatientTbody").append(tableRow);
 
             resetValues();
 
             };
         })
-    });
-});
+    // });
+// });

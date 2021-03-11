@@ -797,11 +797,10 @@ header .scroll-to-fixed-fixed {
 
 /* Add patients section */
 
-#inpatientDetails {
-    display: none;
-}
-
-#outpatientDetails {
+#inpatientDetails,
+#inpatientForm,
+#outpatientDetails,
+#outpatientForm{
     display: none;
 }
 
