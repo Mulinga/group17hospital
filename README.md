@@ -1,4 +1,4 @@
-# About Moringa Hospital
+# Moringa Hospital
 This is a collaboration project among Mulinga Charles, Melissa Koi and Paul Ngigi. It concerns a hospital facility website where you can book an appointment or get registered as a patient upon visiting
 # Date 
 11/03/2021
