@@ -53,7 +53,7 @@
 
             var tabledataFName = document.createElement("td");
             tabledataFName.innerHTML = inputtedFirstname;
-
+            
             var tabledataLName = document.createElement("td");
             tabledataLName.innerHTML = inputtedLastname;
 
