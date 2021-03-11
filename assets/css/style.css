@@ -804,3 +804,8 @@ header .scroll-to-fixed-fixed {
 #outpatientDetails {
     display: none;
 }
+
+/* Appointment Section */
+#bookAppointment{
+    display: none;
+}
